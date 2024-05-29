@@ -42,7 +42,8 @@ jobs:
           pnpm run docs:build
 
       - name: 复制文件到 docs 目录
-        run: mv src/.vuepress/dist docs
+        run:  mv dist docs
+
 
       - name: 部署文档
         uses: JamesIves/github-pages-deploy-action@v4
