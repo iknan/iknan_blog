@@ -65,4 +65,5 @@ jobs:
           script: |
             cd /www/wwwroot/www.iknan.love
             git pull origin gh-pages  # 拉取最新的代码
-            
+
+        
