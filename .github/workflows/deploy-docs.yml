@@ -17,7 +17,7 @@ jobs:
         with:
           fetch-depth: 0
           submodules: false  # 如果不使用子模块，这里设置为 false
-          
+
       - name: 设置 pnpm
         uses: pnpm/action-setup@v2
         with:
@@ -38,6 +38,9 @@ jobs:
         env:
           NODE_OPTIONS: --max_old_space_size=8192
         run: pnpm run docs:build
+
+      - name: 创建 CNAME 文件
+        run: echo 'hope.iknan.love' > dist/CNAME
 
       - name: 部署文档
         uses: JamesIves/github-pages-deploy-action@v4
