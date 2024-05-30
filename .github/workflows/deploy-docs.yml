@@ -1,53 +1,50 @@
-name: 部署文档
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
       - main
 
-permissions:
-  contents: write
-
 jobs:
-  deploy-gh-pages:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          # 如果你文档需要 Git 子模块，取消注释下一行
-          # submodules: true
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        submodules: true  # 初始化和更新子模块
 
-      - name: 设置 pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 8
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
 
-      - name: 设置 Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 20
-          cache: pnpm
+    - name: Install dependencies
+      run: npm install
 
-      - name: 安装依赖
-        run: |
-          corepack enable
-          pnpm install --frozen-lockfile
+    - name: Build the project
+      run: npm run build  # 假设您的构建命令是 `npm run build`
 
-      - name: 构建文档
-        env:
-          NODE_OPTIONS: --max_old_space_size=8192
-        run: |-
-          pnpm run docs:build
+    - name: Move build output to docs folder
+      run: mv dist docs  # 将构建输出移动到 docs 文件夹
 
-      - name: 复制文件到 docs 目录
-        run:  mv dist docs
+    - name: List files in current directory
+      run: ls -la
 
+    - name: Show .gitmodules content
+      run: cat .gitmodules
 
-      - name: 部署文档
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          # 部署文档
-          branch: gh-pages
-          folder: docs
+    - name: Show .git/config content
+      run: cat .git/config
+
+    - name: Initialize submodules
+      run: |
+        git submodule init
+        git submodule update --recursive
+
+    - name: Deploy documentation
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        branch: gh-pages
+        folder: docs  # 确保这是构建输出的目录
