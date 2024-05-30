@@ -42,8 +42,21 @@ jobs:
       - name: 创建 CNAME 文件
         run: echo 'hope.iknan.love' > dist/CNAME
 
-      - name: 部署文档
+      - name: 部署文档到 GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: dist
+
+      - name: 部署到服务器
+        uses: appleboy/ssh-action@master
+        with:
+          host: iknan.love
+          username: root
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
+            cd /www/wwwroot/www.iknan.love
+            git pull origin gh-pages  # 拉取最新的代码
+
+            pm2 restart www.iknan.love  # 重启应用
