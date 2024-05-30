@@ -1,6 +1,5 @@
 import { getDirname, path } from "vuepress/utils";
 import { defineUserConfig } from "vuepress";
-import { getRecentUpdatedArticles } from "vuepress-theme-hope/presets/getSlides.js";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 
 import theme from "./theme.js";
@@ -34,7 +33,7 @@ export default defineUserConfig({
     searchProPlugin({
       autoSuggestions: true,
       indexContent: false
-    }),
+    })
   ],
   theme,
  
