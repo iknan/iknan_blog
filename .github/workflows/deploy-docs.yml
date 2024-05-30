@@ -49,9 +49,13 @@ jobs:
           folder: dist
 
       - name: 部署到服务器
-        run: |
-               ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null root@your_server_ip << 'EOF'
-               cd /www/wwwroot/www.iknan.love
-               git pull origin gh-pages
-               pm2 restart www.iknan.love
-               EOF
+        uses: appleboy/ssh-action@master
+        with:
+          host: iknan.love
+          username: root
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
+             cd /www/wwwroot/www.iknan.love
+             git pull origin gh-pages  # 拉取最新的代码
+             pm2 restart www.iknan.love  # 重启应用
