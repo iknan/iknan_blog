@@ -56,7 +56,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            cd /www/wwwroot/www.iknan.love
+            cd /www/wwwroot/www.iknan.love/iknan_blog
             git pull origin gh-pages  # 拉取最新的代码
 
             pm2 restart www.iknan.love  # 重启应用
