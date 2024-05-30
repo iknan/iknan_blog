@@ -10,11 +10,14 @@ export default hopeTheme({
     url: "https://mister-hope.com",
   },
 
+
   iconAssets: "fontawesome-with-brands",
 
   logo: "https://theme-hope-assets.vuejs.press/logo.svg",
 
   repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repoLabel: "Github",
+  repoDisplay:true,
 
   docsDir: "src",
 
@@ -118,7 +121,9 @@ export default hopeTheme({
 
   plugins: {
     blog: true,
-
+    searchPro: true,
+    
+     
     // Install @waline/client before enabling it
     // Note: This is for testing ONLY!
     // You MUST generate and use your own comment service in production.
@@ -260,4 +265,4 @@ export default hopeTheme({
     //   },
     // },
   },
-});
+},{custom: true});
