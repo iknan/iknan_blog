@@ -48,6 +48,13 @@ jobs:
           branch: gh-pages
           folder: dist
 
+      - name: 设置 SSH 环境
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H iknan.love >> ~/.ssh/known_hosts
+
       - name: 部署到服务器
         uses: appleboy/ssh-action@master
         with:
