@@ -31,8 +31,8 @@ jobs:
 
       - name: 安装依赖
         run: |
-            npx corepack enable
-            npx corepack install 
+          npx corepack enable --packageManager=pnpm
+           npx corepack install 
         
       - name: 构建文档
         env:
