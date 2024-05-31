@@ -31,13 +31,14 @@ jobs:
 
       - name: 安装依赖
         run: |
-          corepack enable
-          pnpm install --frozen-lockfile
-
+            npx corepack enable
+            npx corepack install --frozen-lockfile
+        
       - name: 构建文档
         env:
-          NODE_OPTIONS: --max_old_space_size=8192
-        run: pnpm docs:build
+            NODE_OPTIONS: --max_old_space_size=8192
+        run: npx corepack docs:build
+        
 
       - name: 创建 CNAME 文件
         run: echo 'hope.iknan.love' > dist/CNAME
