@@ -40,7 +40,7 @@ jobs:
         run: pnpm run docs:build
 
       - name: 创建 CNAME 文件
-        run: echo 'hope.iknan.love' > dist/CNAME
+        run: echo 'hope.iknan.love' > CNAME
 
       - name: 部署文档到 GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
