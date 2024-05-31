@@ -27,7 +27,7 @@ export default defineUserConfig({
       __dirname,
       "./components/BlogHero.vue"
     ),
-    'vuepress-theme-hope': path.resolve(__dirname, '../../node_modules/vuepress-theme-hope/lib'),
+    'vuepress-theme-hope': path.resolve(__dirname, '../../../node_modules/vuepress-theme-hope/lib'),
   },
   
   plugins:[
