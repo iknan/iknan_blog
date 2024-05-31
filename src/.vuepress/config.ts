@@ -3,7 +3,8 @@ import theme from "./theme.js";
 
 export default defineUserConfig({
   base: "/",
-
+  dest: 'dist',
+  
   locales: {
     "/": {
       lang: "en-US",
