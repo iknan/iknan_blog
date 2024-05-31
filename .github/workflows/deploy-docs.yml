@@ -1,12 +1,14 @@
-name: Deploy to GitHub Pages and Server
+name: 部署文档
 
 on:
   push:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
-  # 构建并部署到 GitHub Pages
   deploy-gh-pages:
     runs-on: ubuntu-latest
     steps:
@@ -14,23 +16,33 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-          submodules: false
+          submodules: false  # 如果不使用子模块，这里设置为 false
 
-      - name: Setup Node.js
+      - name: 设置 pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
+      - name: 设置 Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: 20
+          cache: pnpm
 
-      - name: Install pnpm
-        run: npm install -g pnpm
+      - name: 安装依赖
+        run: |
+          corepack enable
+          pnpm install --frozen-lockfile
 
-      - name: Install Dependencies
-        run: pnpm install --frozen-lockfile
+      - name: 构建文档
+        env:
+          NODE_OPTIONS: --max_old_space_size=8192
+        run: pnpm docs:build
 
-      - name: Build
-        run: pnpm run build
+      - name: 创建 CNAME 文件
+        run: echo 'hope.iknan.love' > dist/CNAME
 
-      - name: Deploy to GitHub Pages
+      - name: 部署文档到 GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
@@ -53,4 +65,3 @@ jobs:
           script: |
             cd /www/wwwroot/www.iknan.love
             git pull origin gh-pages  # 拉取最新的代码
-
