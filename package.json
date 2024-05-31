@@ -1,7 +1,6 @@
 {
   "name": "iknan",
   "version": "2.0.0",
-  "packageManager": "pnpm@10.8.1",
   "description": "A project of vuepress-theme-hope",
   "license": "MIT",
   "type": "module",
