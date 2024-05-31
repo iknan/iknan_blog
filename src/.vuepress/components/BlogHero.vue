@@ -6,10 +6,16 @@ import HitokotoBlogHero from "vuepress-theme-hope/presets/HitokotoBlogHero.js";
 </script>
 
 <template>
-  <BlogHero>
-    <template #bg  #info="info">
-      <BingHeroBackground />
-      <HitokotoBlogHero v-bind="info" />
-    </template>
-  </BlogHero>
-</template>
+    <BlogHero>
+      <!-- #bg 指令的内容 -->
+      <template #bg>
+        <BingHeroBackground />
+      </template>
+  
+      <!-- #info 指令的内容 -->
+      <template #info="info">
+        <HitokotoBlogHero v-bind="info" />
+      </template>
+    </BlogHero>
+  </template>
+  
