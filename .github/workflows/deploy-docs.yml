@@ -15,18 +15,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0
+          fetch-depth: 20
           submodules: false  # 如果不使用子模块，这里设置为 false
 
       - name: 设置 pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: 8
+          version: 10
 
       - name: 设置 Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: 16
           cache: pnpm
 
       - name: 安装依赖
