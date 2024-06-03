@@ -1,23 +1,23 @@
 import { hopeTheme } from "vuepress-theme-hope";
 import { enNavbar, zhNavbar } from "./navbar/index.js";
 import { enSidebar, zhSidebar } from "./sidebar/index.js";
-
+import './styles/index.scss';
 export default hopeTheme({
   hostname: "https://mister-hope.github.io",
-
+  
   author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    name: "iknan",
+    url: "https://iknan.love",
   },
 
   iconAssets: "fontawesome-with-brands",
-
+  darkmode: "switch",
   logo: "https://theme-hope-assets.vuejs.press/logo.svg",
 
   repo: "vuepress-theme-hope/vuepress-theme-hope",
 
   docsDir: "src",
-
+  
   blog: {
     medias: {
       Baidu: "https://example.com",
@@ -57,7 +57,7 @@ export default hopeTheme({
       },
     },
   },
-
+  
   locales: {
     "/": {
       // navbar
@@ -118,7 +118,7 @@ export default hopeTheme({
 
   plugins: {
     blog: true,
-
+    
     // Install @waline/client before enabling it
     // Note: This is for testing ONLY!
     // You MUST generate and use your own comment service in production.
@@ -130,7 +130,7 @@ export default hopeTheme({
     components: {
       components: ["Badge", "VPCard"],
     },
-
+  
     // These features are enabled for demo, only preserve features you need here
     mdEnhance: {
       align: true,
@@ -163,6 +163,7 @@ export default hopeTheme({
       tabs: true,
       tasklist: true,
       vPre: true,
+      imgMark: true,
 
       // install chart.js before enabling it
       // chart: true,
@@ -260,4 +261,5 @@ export default hopeTheme({
     //   },
     // },
   },
-},{ custom: true } );
+},
+{ custom: true } );

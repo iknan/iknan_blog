@@ -10,14 +10,14 @@ export default defineUserConfig({
   
   locales: {
     "/": {
-      lang: "en-US",
-      title: "Blog Demo",
+      lang: "zh-CN",
+      title: "ik楠の空间",
       description: "A blog demo for vuepress-theme-hope",
     },
-    "/zh/": {
-      lang: "zh-CN",
-      title: "博客演示",
-      description: "vuepress-theme-hope 的博客演示",
+    "/en/": {
+      lang: 'en-US',
+      title: 'iknanBlog',
+      description: 'Your Site Description',
     },
   },
   alias: {
@@ -28,7 +28,9 @@ export default defineUserConfig({
   },
 
   theme,
-
+  
+  
+  
   // Enable it with pwa
   // shouldPrefetch: false,
 });
