@@ -1,6 +1,7 @@
 import { defineUserConfig } from "vuepress";
 import { getDirname, path } from "vuepress/utils";
 import theme from "./theme.js";
+import searchPlugin from "@vuepress/plugin-search";
 
 const __dirname = getDirname(import.meta.url);
 
@@ -28,8 +29,17 @@ export default defineUserConfig({
   },
 
   theme,
- 
-
+  plugins:[
+    searchPlugin({
+      locales: {
+        '/': {
+          placeholder: '搜索',
+        },
+        '/en/': {
+          placeholder: 'Search',
+        },
+    }})
+  ]
   
   // Enable it with pwa
   // shouldPrefetch: false,

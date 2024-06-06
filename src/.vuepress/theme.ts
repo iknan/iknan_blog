@@ -1,6 +1,7 @@
 import { hopeTheme } from "vuepress-theme-hope";
 import { enNavbar, zhNavbar } from "./navbar/index.js";
 import { enSidebar, zhSidebar } from "./sidebar/index.js";
+
 export default hopeTheme({
   hostname: "https://mister-hope.github.io",
   
@@ -10,13 +11,12 @@ export default hopeTheme({
   },
 
   iconAssets: "fontawesome-with-brands",
-  darkmode: "switch",
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "assets/logo.gif",
 
   repo: "vuepress-theme-hope/vuepress-theme-hope",
-
-  docsDir: "src",
   
+  docsDir: "src",
+
   blog: {
     medias: {
       Baidu: "https://example.com",
@@ -58,7 +58,7 @@ export default hopeTheme({
   },
   
   locales: {
-    "/": {
+    "/en/": {
       // navbar
       navbar: enNavbar,
 
@@ -70,8 +70,8 @@ export default hopeTheme({
       displayFooter: true,
 
       blog: {
-        description: "A FrontEnd programmer",
-        intro: "/intro.html",
+        description: "A Code Sherpa",
+        intro: "/en/intro.html",
       },
 
       metaLocales: {
@@ -82,20 +82,20 @@ export default hopeTheme({
     /**
      * Chinese locale config
      */
-    "/zh/": {
+    "/": {
       // navbar
       navbar: zhNavbar,
 
       // sidebar
       sidebar: zhSidebar,
 
-      footer: "默认页脚",
+      footer: 'Made with <a href="https://beian.miit.gov.cn">豫ICP备2024066568号-1</a>',
 
       displayFooter: true,
 
       blog: {
-        description: "一个前端开发者",
-        intro: "/zh/intro.html",
+        description: "一个代码搬运工",
+        intro: "/intro.html",
       },
 
       // page meta
@@ -108,7 +108,7 @@ export default hopeTheme({
   encrypt: {
     config: {
       "/demo/encrypt.html": ["1234"],
-      "/zh/demo/encrypt.html": ["1234"],
+      "/en/demo/encrypt.html": ["1234"],
     },
   },
 
@@ -117,6 +117,7 @@ export default hopeTheme({
 
   plugins: {
     blog: true,
+    search: true,
     
     // Install @waline/client before enabling it
     // Note: This is for testing ONLY!
@@ -162,7 +163,7 @@ export default hopeTheme({
       tabs: true,
       tasklist: true,
       vPre: true,
-      imgMark: true,
+      
 
       // install chart.js before enabling it
       // chart: true,
