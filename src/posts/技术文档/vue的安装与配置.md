@@ -21,19 +21,15 @@ star: true
 
 ### 3.测试是否安装成功,打开cmd窗口
 
-输入node -v 	//显示node.js版本
+输入node -v  //显示node.js版本
 
-输入npm -v 	//显示npm版本
-
-
+输入npm -v  //显示npm版本
 
 ### 4.在安装路径下创建两个文件夹node_cache和node_global
 
+### 5.使用管理员身份打开cmd窗口，输入以下代码
 
-
-5.使用管理员身份打开cmd窗口，输入以下代码
-
-​	(1)npm config set prefix "路径\node_globle"(替换即可)
+​ (1)npm config set prefix "路径\node_globle"(替换即可)
 
 ``` nmp
 npm config set prefix "D:\web\node.js\node_global"
@@ -52,8 +48,6 @@ npm config get cache
 npm config get prefix
 ```
 
-
-
 ### 6.配置环境变量
 
 (1) 在系统变量中新建![image-20240507152950202]
@@ -62,13 +56,9 @@ npm config get prefix
 
 然后在Path中添加 `%NODE_PATH%`
 
-
-
 (2)在用户变量中双击Path
 
-
 把这个修改成刚刚创建的node_global文件夹
-
 
 ### 7.安装淘宝镜像中央仓库
 
@@ -76,7 +66,7 @@ npm是国外服务器，中国用户下载内容速度受限。推荐使用中�
 
 命令行指令：
 
-npm config set registry https://registry.npmmirror.com
+npm config set registry <https://registry.npmmirror.com>
 
 验证淘宝镜像命令：npm config get registry
 
@@ -84,7 +74,7 @@ npm config set registry https://registry.npmmirror.com
 
 ### (1)窗口命令
 
-```npm
+```bash
 npm install -g webpack     //下载
 npm install --save-dev webpack  //安装到devDependencies,运行
 ```
@@ -95,7 +85,7 @@ npm install --save-dev webpack  //安装到devDependencies,运行
 
 注意：如果安装的是webpack v4+版本(即比v4高的版本)，则还需要安装webpack-cli或者webpack-command，否则webpack命令运行不了。执行：
 
-```
+```bash
 npm uninstall webpack-cli    //卸载本地安装的webpack-cli
 npm install -g webpack-cli       //全局安装webpack-cli
 npm install --save-dev webpack-cli   //把webpack-cli安装到devDependencies
@@ -105,10 +95,8 @@ npm install --save-dev webpack-cli   //把webpack-cli安装到devDependencies
 
 安装vue Cli
 
-```npm
+```bash
 npm install -g vue-cli
 ```
 
-
-
-​      
+​
