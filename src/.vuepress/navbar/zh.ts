@@ -39,7 +39,7 @@ export const zhNavbar = navbar([
   {
     text: "技术专栏",
     icon: "tabler:brand-carbon",
-    prefix: "/posts/Tech_Column/",
+    prefix: "/posts/技术文档/",
     children: [
       {
         text: "vue的安装与配置",
