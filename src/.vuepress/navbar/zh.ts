@@ -56,9 +56,9 @@ export const zhNavbar = navbar([
         icon:" eos-icons:blockchain",
         prefix: "区块链/",
         children: [
-          { text: "区块链介绍", icon: "eos-icons:blockchain", link: "介绍" }
-          { text: "区块链配置", icon: "eos-icons:blockchain", link: "配置" }
-          { text: "区块链操作步骤", icon: "eos-icons:blockchain", link: "指南" }
+          { text: "区块链介绍", icon: "eos-icons:blockchain", link: "介绍" },
+          { text: "区块链配置", icon: "eos-icons:blockchain", link: "配置" },
+          { text: "区块链操作步骤", icon: "eos-icons:blockchain", link: "指南" },
           { text: "区块链实现", icon: "eos-icons:blockchain", link: "实现效果" }
         ]
       }
