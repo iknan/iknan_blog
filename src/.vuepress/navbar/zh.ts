@@ -31,7 +31,9 @@ export const zhNavbar = navbar([
       {
         text: "Linux",
         icon: "bx:windows",
-        children: []
+        children: [
+          { text: "Linux操作系统提纲", icon: "bx:windows", link: "Linux操作系统提纲" }
+        ]
       }
     ]
   },
