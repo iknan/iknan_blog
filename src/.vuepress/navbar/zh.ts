@@ -67,18 +67,18 @@ export const zhNavbar = navbar([
       }
     ]
 
-  },
+  },d
   {
     text: "博文",
     icon: "pen-to-square",
-    prefix: "/posts/",
+    prefix: "/博文/",
     children: [
       {
-        text: "苹果",
+        text: "程序员的自我修养",
         icon: "pen-to-square",
-        prefix: "apple/",
+        prefix: "程序员的自我修养/",
         children: [
-          { text: "苹果1", icon: "pen-to-square", link: "1" },
+          { text: "塑料之爱", icon: "pen-to-square", link: "塑料之爱" },
           { text: "苹果2", icon: "pen-to-square", link: "2" },
           "3",
           "4",
