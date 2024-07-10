@@ -67,7 +67,7 @@ export const zhNavbar = navbar([
       }
     ]
 
-  },d
+  },
   {
     text: "博文",
     icon: "pen-to-square",
