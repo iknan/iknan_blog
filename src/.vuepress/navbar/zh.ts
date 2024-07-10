@@ -71,7 +71,7 @@ export const zhNavbar = navbar([
   {
     text: "博文",
     icon: "pen-to-square",
-    prefix: "/博文/",
+    prefix: "/posts/博文/",
     children: [
       {
         text: "程序员的自我修养",
