@@ -2,7 +2,6 @@ import { defineUserConfig } from "vuepress";
 import { getDirname, path } from "vuepress/utils";
 import theme from "./theme.js";
 import searchPlugin from "@vuepress/plugin-search";
-import { iconify } from '@iconify/json'
 
 
 const __dirname = getDirname(import.meta.url);
