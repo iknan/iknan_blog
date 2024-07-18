@@ -56,7 +56,7 @@ export default hopeTheme({
       },
     },
   },
-  
+
   locales: {
     "/en/": {
       // navbar

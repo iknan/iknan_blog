@@ -14,7 +14,7 @@ star: true
 # vue的安装与配置
 
 ## 1.node.js安装
-
+<!-- more -->
 ### 1.网站：[下载 | Node.js 中文网 (nodejs.cn)](https://nodejs.cn/download/)
 
 ### 2.直接下载安装，一直下一步即可（修改安装地址时路径不要有中文）
