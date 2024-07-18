@@ -3,7 +3,6 @@ import { getDirname, path } from "vuepress/utils";
 import theme from "./theme.js";
 import searchPlugin from "@vuepress/plugin-search";
 
-
 const __dirname = getDirname(import.meta.url);
 
 export default defineUserConfig({
@@ -30,7 +29,7 @@ export default defineUserConfig({
   },
 
   theme,
-  plugins:[
+  plugins: [
     searchPlugin({
       locales: {
         '/': {
@@ -39,8 +38,10 @@ export default defineUserConfig({
         '/en/': {
           placeholder: 'Search',
         },
-    }})
-  ]
+      },
+    }),
+
+  ],
   
   // Enable it with pwa
   // shouldPrefetch: false,

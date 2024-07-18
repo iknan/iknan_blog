@@ -1,7 +1,10 @@
 ---
 icon: circle-info
 cover: /assets/images/cover3.jpg
-order: 1 
+date: 2024-06-30
+dir:
+  order: 1
+star: true  
 ---
 
 # 介绍页

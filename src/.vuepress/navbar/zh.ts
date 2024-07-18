@@ -78,40 +78,12 @@ export const zhNavbar = navbar([
         icon: "pen-to-square",
         prefix: "程序员的自我修养/",
         children: [
-          { text: "塑料之爱", icon: "pen-to-square", link: "塑料之爱" },
-          { text: "苹果2", icon: "pen-to-square", link: "2" },
-          "3",
-          "4",
+          { text: "塑料之爱", icon: "pen-to-square", link: "塑料之爱", },
+          { text: "On Your Mark", icon: "pen-to-square", link: "On Your Mark", },
+
         ],
       },
-      {
-        text: "香蕉",
-        icon: "pen-to-square",
-        prefix: "banana/",
-        children: [
-          {
-            text: "香蕉 1",
-            icon: "pen-to-square",
-            link: "1",
-          },
-          {
-            text: "香蕉 2",
-            icon: "pen-to-square",
-            link: "2",
-          },
-          "3",
-          "4",
-        ],
-      },
-      { text: "樱桃", icon: "pen-to-square", link: "cherry" },
-      { text: "火龙果", icon: "pen-to-square", link: "dragonfruit" },
-      "tomato",
-      "strawberry",
+    
     ],
-  },
-  {
-    text: "V2 文档",
-    icon: "book",
-    link: "https://theme-hope.vuejs.press/",
   },
 ]);

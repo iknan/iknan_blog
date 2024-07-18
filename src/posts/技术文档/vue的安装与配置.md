@@ -9,7 +9,9 @@ tag:
   - vue
   - 前端
   - 技术文档
-star: true
+star: true 
+dir:
+  order: 9
 ---
 # vue的安装与配置
 

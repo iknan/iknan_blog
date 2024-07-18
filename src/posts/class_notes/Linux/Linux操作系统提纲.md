@@ -8,6 +8,8 @@ tag:
   - Linux
   - 面试题
   - 笔记
+dir:
+  order: 10
 ---
 
 # Linux基础命令提纲
