@@ -23,9 +23,6 @@ importers:
       vuepress:
         specifier: 2.0.0-rc.12
         version: 2.0.0-rc.12(@vuepress/bundler-webpack@2.0.0-rc.12)(vue@3.4.27)
-      vuepress-plugin-auto-sidebar:
-        specifier: ^2.3.2
-        version: 2.3.2
       vuepress-theme-hope:
         specifier: 2.0.0-rc.47
         version: 2.0.0-rc.47(@vuepress/plugin-search@2.0.0-rc.33(vuepress@2.0.0-rc.12(@vuepress/bundler-webpack@2.0.0-rc.12)(vue@3.4.27)))(markdown-it@14.1.0)(sass-loader@14.2.1(sass@1.77.4)(webpack@5.91.0))(vuepress-plugin-search-pro@2.0.0-rc.47(sass-loader@14.2.1(sass@1.77.4)(webpack@5.91.0))(vuepress@2.0.0-rc.12(@vuepress/bundler-webpack@2.0.0-rc.12)(vue@3.4.27)))(vuepress@2.0.0-rc.12(@vuepress/bundler-webpack@2.0.0-rc.12)(vue@3.4.27))
@@ -1134,10 +1131,6 @@ packages:
   colorette@2.0.20:
     resolution: {integrity: sha512-IfEDxwoWIjkeXL1eXcDiow4UbKjhLdq6/EuSVR9GMN7KVH3r9gQ83e73hsz1Nd1T3ijd5xv1wcWRYO+D6kCI2w==, tarball: https://registry.npmmirror.com/colorette/-/colorette-2.0.20.tgz}
 
-  colors@1.4.0:
-    resolution: {integrity: sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==, tarball: https://registry.npmmirror.com/colors/-/colors-1.4.0.tgz}
-    engines: {node: '>=0.1.90'}
-
   commander@2.20.3:
     resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==, tarball: https://registry.npmmirror.com/commander/-/commander-2.20.3.tgz}
 
@@ -2101,9 +2094,6 @@ packages:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==, tarball: https://registry.npmmirror.com/merge2/-/merge2-1.4.1.tgz}
     engines: {node: '>= 8'}
 
-  merge@2.1.1:
-    resolution: {integrity: sha512-jz+Cfrg9GWOZbQAnDQ4hlVnQky+341Yk5ru8bZSe6sIDTCIg8n9i/u7hSQGSVOF3C7lH6mGtqjkiT9G4wFLL0w==, tarball: https://registry.npmmirror.com/merge/-/merge-2.1.1.tgz}
-
   methods@1.1.2:
     resolution: {integrity: sha512-iclAHeNqNm68zFtnZ0e+1L2yUIdvzNoauKU4WBA3VvH/vPFieF7qfRlwUZU+DA9P9bPXIS90ulxoUoCH23sV2w==, tarball: https://registry.npmmirror.com/methods/-/methods-1.1.2.tgz}
     engines: {node: '>= 0.6'}
@@ -3018,9 +3008,6 @@ packages:
     peerDependenciesMeta:
       typescript:
         optional: true
-
-  vuepress-plugin-auto-sidebar@2.3.2:
-    resolution: {integrity: sha512-LmLluo5IrDNc8f7tprEhBYC+lGnfVCVFW7Pp29A+Q21yhin3qXxrTimhmK8e5mO7/qFVWVxYS4hOc22UeoxmUA==, tarball: https://registry.npmmirror.com/vuepress-plugin-auto-sidebar/-/vuepress-plugin-auto-sidebar-2.3.2.tgz}
 
   vuepress-plugin-components@2.0.0-rc.47:
     resolution: {integrity: sha512-udhgO6YWokI3PZUzuqnl7a3uD6h+9H0gSBPofUyffnhZvcWeuVAWQgmujGjzkqDLmkXSwJakssrZV//i76XCYg==, tarball: https://registry.npmmirror.com/vuepress-plugin-components/-/vuepress-plugin-components-2.0.0-rc.47.tgz}
@@ -4540,8 +4527,6 @@ snapshots:
 
   colorette@2.0.20: {}
 
-  colors@1.4.0: {}
-
   commander@2.20.3: {}
 
   commander@7.2.0: {}
@@ -5505,8 +5490,6 @@ snapshots:
 
   merge2@1.4.1: {}
 
-  merge@2.1.1: {}
-
   methods@1.1.2: {}
 
   micromatch@4.0.7:
@@ -6355,12 +6338,6 @@ snapshots:
       '@vue/runtime-dom': 3.4.27
       '@vue/server-renderer': 3.4.27(vue@3.4.27)
       '@vue/shared': 3.4.27
-
-  vuepress-plugin-auto-sidebar@2.3.2:
-    dependencies:
-      colors: 1.4.0
-      execa: 5.1.1
-      merge: 2.1.1
 
   vuepress-plugin-components@2.0.0-rc.47(sass-loader@14.2.1(sass@1.77.4)(webpack@5.91.0))(vuepress@2.0.0-rc.12(@vuepress/bundler-webpack@2.0.0-rc.12)(vue@3.4.27)):
     dependencies:
