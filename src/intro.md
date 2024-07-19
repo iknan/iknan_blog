@@ -1,9 +1,9 @@
 ---
 icon: circle-info
-cover: /assets/images/cover3.jpg
 date: 2024-06-30
 dir:
   order: 1
+cover: /assets/images/cover3.jpg  
 star: true  
 ---
 
