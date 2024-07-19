@@ -86,4 +86,37 @@ export const zhNavbar = navbar([
     
     ],
   },
+  {
+    text: "Golang",
+    icon: "devicon:go",
+    prefix: "/posts/go相关笔记/",
+    children: [
+      {
+        text: "数组与切片",
+        icon: "lets-icons:array",
+        link: "数组与切片"
+      },
+      {
+        text: "Map",
+        icon: "lets-icons:array",
+        link: "Map"
+      },
+      {
+        text: "Context上下文",
+        icon: "lets-icons:array",
+        link: "Context上下文"
+      },
+      {
+        text: "并发入门",
+        icon: "lets-icons:array",
+        link: "并发入门"
+      },
+      {
+        text: "并发进阶",
+        icon: "lets-icons:array",
+        link: "并发进阶"
+      },
+    
+    ],
+  },
 ]);

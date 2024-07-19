@@ -1,6 +1,7 @@
 ---
 icon: pen-to-square
 date: 2024-03-25
+author: false
 category:
   - 博文
   - 修养
