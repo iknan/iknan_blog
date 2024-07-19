@@ -16,7 +16,7 @@ dir:
 # ON YOUR MARK
 
 > 如何高效学习
-
+<!-- more -->
 <a name="SCKWF"></a>
 
 ## 学习的本质是坚持
