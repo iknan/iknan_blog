@@ -1,6 +1,6 @@
 ---
 icon: vscode-icons:file-type-vueconfig
-date: 2023-010-20
+date: 2023-10-20
 category:
   - vue
   - 前端
