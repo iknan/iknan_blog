@@ -3,7 +3,7 @@ icon: circle-info
 date: 2024-06-30
 dir:
   order: 1
-cover: /assets/images/cover3.jpg  
+cover: /assets/images/intro.png
 star: true  
 ---
 
