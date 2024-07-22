@@ -10,8 +10,9 @@ export default hopeTheme({
     url: "https://iknan.love",
   },
 
+  favicon: "assets/favicon.svg",
   iconAssets: "iconify",
-  logo: "assets/logo.gif",
+  logo: "assets/favicon.svg",
 
   repo: "vuepress-theme-hope/vuepress-theme-hope",
   
