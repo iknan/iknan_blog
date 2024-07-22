@@ -12,8 +12,8 @@ export default hopeTheme({
 
   favicon: "assets/favicon.svg",
   iconAssets: "iconify",
-  logo: "assets/favicon.svg",
-
+  logo: "assets/logo.gif",
+  
   repo: "vuepress-theme-hope/vuepress-theme-hope",
   
   docsDir: "src",
