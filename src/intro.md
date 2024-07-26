@@ -5,8 +5,7 @@ dir:
   order: 1
 cover: /assets/images/intro.png
 star: true  
-reprint: 本文转载自某某网站，文链接：[链接地址](http://example.com)
-stick: 1   #数字越大，排名越靠前。
+stick: 2  
 ---
 
 # 介绍页

@@ -31,7 +31,7 @@ projects:
   - icon: friend
     name: 伙伴名称
     desc: 伙伴详细介绍
-    link: https://你的伙伴链接
+    link: https://yzyx.fun
 
   - icon: https://theme-hope-assets.vuejs.press/logo.svg
     name: 自定义项目
