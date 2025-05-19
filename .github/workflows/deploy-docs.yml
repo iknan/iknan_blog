@@ -22,12 +22,13 @@ jobs:
         uses: pnpm/action-setup@v2
         with:
           version: 8
-
       - name: 设置 Node.js
         uses: actions/setup-node@v3
+        continue-on-error: true
         with:
           node-version: 20
           cache: pnpm
+
 
       - name: 安装依赖
         run: |
@@ -65,5 +66,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            cd /www/wwwroot/www.iknan.love
+            cd /www/wwwroot/mingbao.store
             git pull origin gh-pages  # 拉取最新的代码
