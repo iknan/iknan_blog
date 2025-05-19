@@ -4,7 +4,7 @@ layout: BlogHome
 title: 主页
 icon: home
 heroImage: assets/logo.gif
-heroText: ik楠
+heroText: 明
 heroFullScreen: true
 tagline: 你可以在这里放置你的口号与标语
 projects:
