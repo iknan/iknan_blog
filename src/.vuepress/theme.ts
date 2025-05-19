@@ -6,8 +6,8 @@ export default hopeTheme({
   hostname: "https://mister-hope.github.io",
   
   author: {
-    name: "iknan",
-    url: "https://iknan.love",
+    name: "ming",
+    url: "https://mingbao.store",
   
   },
 
@@ -66,7 +66,7 @@ export default hopeTheme({
       // sidebar
       sidebar: zhSidebar,
 
-      footer: 'Made with <a href="https://beian.miit.gov.cn">豫ICP备2024066568号-1</a>',
+      footer: 'Made with <a href="https://beian.miit.gov.cn">豫ICP备2025119465号-1</a>',
 
       displayFooter: true,
 

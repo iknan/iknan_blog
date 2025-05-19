@@ -54,13 +54,13 @@ jobs:
            mkdir -p ~/.ssh
             echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
             chmod 600 ~/.ssh/id_rsa
-            ssh-keyscan -H iknan.love >> ~/.ssh/known_hosts
-            echo "Host iknan.love
+            ssh-keyscan -H mingbao.store >> ~/.ssh/known_hosts
+            echo "Host mingbao.store
               StrictHostKeyChecking no" >> ~/.ssh/config
       - name: 部署到服务器
         uses: appleboy/ssh-action@master
         with:
-          host: iknan.love
+          host: mingbao.store
           username: root
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
