@@ -66,5 +66,6 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
+            git config --global --add safe.directory /www/wwwroot/mingbao.store
             cd /www/wwwroot/mingbao.store
             git pull origin gh-pages  # 拉取最新的代码
