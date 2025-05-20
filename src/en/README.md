@@ -4,7 +4,7 @@ layout: BlogHome
 icon: home
 title: Blog Home
 heroImage: /assets/heroImage.png
-heroText: iknan
+heroText: ikのming
 tagline: You can put your slogan here
 heroFullScreen: true
 projects:
